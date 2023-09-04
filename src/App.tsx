@@ -1,14 +1,16 @@
 import './App.css'
-import Counter from './Counter'
-import StyleChanger from './StyleChanger'
+import Grandpa from './Grandpa'
+import UserContextProvider from './context';
+
+
 
 function App(): JSX.Element {
 
   return (
-    <>
-      <Counter />
-      <StyleChanger />
-    </>
+    <UserContextProvider>
+      <Grandpa />
+    </UserContextProvider>
+
   )
 }
 
